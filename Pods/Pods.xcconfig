@@ -1,0 +1,7 @@
+ALWAYS_SEARCH_USER_PATHS = YES
+HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
+OTHER_LDFLAGS = -ObjC -Wl,-no_compact_unwind -framework CoreData -framework CoreGraphics -framework Foundation -framework MessageUI -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration -framework UIKit
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/A2StoryboardSegueContext" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/BuildHeaders/AZCoreRecord" "${PODS_ROOT}/BuildHeaders/BlocksKit" "${PODS_ROOT}/BuildHeaders/DZProgressController" "${PODS_ROOT}/BuildHeaders/MGImageUtilities" "${PODS_ROOT}/BuildHeaders/NSData+Base64" "${PODS_ROOT}/BuildHeaders/Reachability" "${PODS_ROOT}/BuildHeaders/SSKeychain" "${PODS_ROOT}/BuildHeaders/UIImage+PDF" "${PODS_ROOT}/BuildHeaders/UIImage-Categories" "${PODS_ROOT}/BuildHeaders/libffi" "${PODS_ROOT}/BuildHeaders/xmlrpc"
+PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/A2StoryboardSegueContext" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/AZCoreRecord" "${PODS_ROOT}/Headers/BlocksKit" "${PODS_ROOT}/Headers/DZProgressController" "${PODS_ROOT}/Headers/MGImageUtilities" "${PODS_ROOT}/Headers/NSData+Base64" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/SSKeychain" "${PODS_ROOT}/Headers/UIImage+PDF" "${PODS_ROOT}/Headers/UIImage-Categories" "${PODS_ROOT}/Headers/libffi" "${PODS_ROOT}/Headers/xmlrpc"
+PODS_ROOT = ${SRCROOT}/Pods

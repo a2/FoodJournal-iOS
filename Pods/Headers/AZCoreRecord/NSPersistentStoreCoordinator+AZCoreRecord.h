@@ -1,0 +1,1 @@
+../../AZCoreRecord/AZCoreRecord/NSPersistentStoreCoordinator+AZCoreRecord.h

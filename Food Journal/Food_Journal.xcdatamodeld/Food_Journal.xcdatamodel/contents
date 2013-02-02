@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C3006" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Account" representedClassName="Account" isAbstract="YES" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Food" representedClassName="Food" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="meal" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Meal" inverseName="foods" inverseEntity="Meal" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName="Image" syncable="YES">
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="largeThumbnailImageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="smallThumbnailImageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="meal" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Meal" inverseName="images" inverseEntity="Meal" syncable="YES"/>
+        <relationship name="wordPressImages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WordPressImage" inverseName="image" inverseEntity="WordPressImage" syncable="YES"/>
+    </entity>
+    <entity name="Meal" representedClassName="Meal" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Food" inverseName="meal" inverseEntity="Food" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Image" inverseName="meal" inverseEntity="Image" syncable="YES"/>
+        <relationship name="post" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="meals" inverseEntity="Post" syncable="YES"/>
+    </entity>
+    <entity name="Post" representedClassName="Post" syncable="YES">
+        <attribute name="contents" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="meals" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Meal" inverseName="post" inverseEntity="Meal" syncable="YES"/>
+        <relationship name="wordPressPosts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WordPressPost" inverseName="post" inverseEntity="WordPressPost" syncable="YES"/>
+    </entity>
+    <entity name="WordPressAccount" representedClassName="WordPressAccount" parentEntity="Account" syncable="YES">
+        <attribute name="blogId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="hasToken" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="xmlrpcUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="wordPressImages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WordPressImage" inverseName="account" inverseEntity="WordPressImage" syncable="YES"/>
+        <relationship name="wordPressPosts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WordPressPost" inverseName="account" inverseEntity="WordPressPost" syncable="YES"/>
+    </entity>
+    <entity name="WordPressImage" representedClassName="WordPressImage" syncable="YES">
+        <attribute name="attachmentId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="account" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WordPressAccount" inverseName="wordPressImages" inverseEntity="WordPressAccount" syncable="YES"/>
+        <relationship name="image" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="wordPressImages" inverseEntity="Image" syncable="YES"/>
+    </entity>
+    <entity name="WordPressPost" representedClassName="WordPressPost" syncable="YES">
+        <attribute name="postId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="account" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="WordPressAccount" inverseName="wordPressPosts" inverseEntity="WordPressAccount" syncable="YES"/>
+        <relationship name="post" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="wordPressPosts" inverseEntity="Post" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="-189" positionY="208" width="128" height="90"/>
+        <element name="Food" positionX="341" positionY="354" width="128" height="75"/>
+        <element name="Image" positionX="341" positionY="447" width="128" height="120"/>
+        <element name="Meal" positionX="162" positionY="339" width="128" height="120"/>
+        <element name="Post" positionX="-27" positionY="354" width="128" height="105"/>
+        <element name="WordPressAccount" positionX="-27" positionY="191" width="128" height="120"/>
+        <element name="WordPressImage" positionX="139" positionY="492" width="128" height="103"/>
+        <element name="WordPressPost" positionX="162" positionY="221" width="128" height="103"/>
+    </elements>
+</model>

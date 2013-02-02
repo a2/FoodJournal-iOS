@@ -1,0 +1,1 @@
+../../AZCoreRecord/AZCoreRecord/AZCoreRecord.h

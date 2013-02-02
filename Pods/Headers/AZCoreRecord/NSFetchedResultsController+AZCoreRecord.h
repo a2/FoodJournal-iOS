@@ -1,0 +1,1 @@
+../../AZCoreRecord/AZCoreRecord/NSFetchedResultsController+AZCoreRecord.h

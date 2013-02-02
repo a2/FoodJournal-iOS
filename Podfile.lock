@@ -1,0 +1,54 @@
+
+PODS:
+- A2StoryboardSegueContext (1.0.1)
+- AFNetworking (1.1.0)
+- AZCoreRecord (1.0)
+- BlocksKit (1.8.1):
+  - libffi
+- DZProgressController (1.0.0)
+- MGImageUtilities (1.0.0)
+- NSData+Base64 (1.0.0)
+- Reachability (3.1.0)
+- SSKeychain (0.2.1)
+- UIImage+PDF (1.1.0)
+- UIImage-Categories (0.0.1)
+- libffi (3.0.11)
+- xmlrpc (2.3.2):
+  - NSData+Base64 (~> 1.0.0)
+
+DEPENDENCIES:
+- A2StoryboardSegueContext
+- AFNetworking
+- AZCoreRecord (from `https://github.com/zwaldowski/AZCoreRecord.git', branch `next')
+- BlocksKit
+- DZProgressController
+- MGImageUtilities (from `https://github.com/a2/MGImageUtilities.git')
+- Reachability
+- SSKeychain
+- UIImage+PDF
+- UIImage-Categories
+- xmlrpc
+
+EXTERNAL SOURCES:
+  AZCoreRecord:
+    :git: https://github.com/zwaldowski/AZCoreRecord.git
+    :branch: next
+  MGImageUtilities:
+    :git: https://github.com/a2/MGImageUtilities.git
+
+SPEC CHECKSUMS:
+  A2StoryboardSegueContext: c5ee4ebdfcc29ac4e544cbe832f6489cade23213
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+  AZCoreRecord: 53b2b9e28b47175b68a006fbd062f69085874870
+  BlocksKit: 18102744fd7c44b54f1e54ce6ffe9258bcb5df81
+  DZProgressController: 93a9430f3be0660befcb0c6c510abb84b0937227
+  MGImageUtilities: 3f6515e0a28225aab53a3d85478610f725f2e3d0
+  NSData+Base64: 8b910cb8a64f45daec6fb15936c36a9a911c57ca
+  Reachability: 1c8584c5f26fa776695efef95caaa50402c94cfb
+  SSKeychain: ffa1a79eb716d9ed1ca184fb0cf218087ca28486
+  UIImage+PDF: ddebe9c3f8890009e7f2073798ed9917c867c9df
+  UIImage-Categories: d9f10e0afb9b281b35a3c2b0c7d16d1ca251d824
+  libffi: 8a1d9ba43c0c84b546b42c6f742714e73aa07ae1
+  xmlrpc: c2b1eb82e547bcc715631bebdfcb152a6faf6762
+
+COCOAPODS: 0.16.2

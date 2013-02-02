@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0001A4DB16BF2AF4003093C2 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 0001A4CF16BF2AF4003093C2 /* Account.m */; };
+		0001A4DD16BF2AF4003093C2 /* WordPressAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0001A4D316BF2AF4003093C2 /* WordPressAccount.m */; };
+		0001A4DE16BF2AF4003093C2 /* _Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 0001A4D616BF2AF4003093C2 /* _Account.m */; };
+		0001A4E016BF2AF4003093C2 /* _WordPressAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0001A4DA16BF2AF4003093C2 /* _WordPressAccount.m */; };
+		0001A4E416BF47CA003093C2 /* FJPostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0001A4E316BF47CA003093C2 /* FJPostsViewController.m */; };
+		000E6F9916C5C4CB00CD8803 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 000E6F9216C5C4CB00CD8803 /* Icon-Small.png */; };
+		000E6F9A16C5C4CB00CD8803 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000E6F9316C5C4CB00CD8803 /* Icon-Small@2x.png */; };
+		000E6F9B16C5C4CB00CD8803 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 000E6F9416C5C4CB00CD8803 /* Icon.png */; };
+		000E6F9D16C5C4CB00CD8803 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000E6F9616C5C4CB00CD8803 /* Icon@2x.png */; };
+		000E6F9E16C5C4CB00CD8803 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 000E6F9716C5C4CB00CD8803 /* iTunesArtwork */; };
+		000E6F9F16C5C4CB00CD8803 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 000E6F9816C5C4CB00CD8803 /* iTunesArtwork@2x */; };
+		003864A616BD9FA300BA84C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003864A516BD9FA300BA84C5 /* UIKit.framework */; };
+		003864A816BD9FA300BA84C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003864A716BD9FA300BA84C5 /* Foundation.framework */; };
+		003864AA16BD9FA300BA84C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003864A916BD9FA300BA84C5 /* CoreGraphics.framework */; };
+		003864AC16BD9FA300BA84C5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003864AB16BD9FA300BA84C5 /* CoreData.framework */; };
+		003864B216BD9FA300BA84C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 003864B016BD9FA300BA84C5 /* InfoPlist.strings */; };
+		003864B416BD9FA300BA84C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 003864B316BD9FA300BA84C5 /* main.m */; };
+		003864C116BD9FA300BA84C5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003864BF16BD9FA300BA84C5 /* MainStoryboard.storyboard */; };
+		003864C716BD9FA300BA84C5 /* Food_Journal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 003864C516BD9FA300BA84C5 /* Food_Journal.xcdatamodeld */; };
+		003864DE16BD9FD300BA84C5 /* FJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 003864D716BD9FD300BA84C5 /* FJAppDelegate.m */; };
+		003864E016BD9FD300BA84C5 /* FJSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003864DD16BD9FD300BA84C5 /* FJSettingsViewController.m */; };
+		003864E616BD9FEA00BA84C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 003864E316BD9FEA00BA84C5 /* Default-568h@2x.png */; };
+		003864E716BD9FEA00BA84C5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 003864E416BD9FEA00BA84C5 /* Default.png */; };
+		003864E816BD9FEA00BA84C5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 003864E516BD9FEA00BA84C5 /* Default@2x.png */; };
+		003864ED16BDA0B400BA84C5 /* UIDevice+A2Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 003864EC16BDA0B400BA84C5 /* UIDevice+A2Additions.m */; };
+		003864F516BDA12700BA84C5 /* FJDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 003864F316BDA12700BA84C5 /* FJDefinitions.m */; };
+		0039609516C05E2000FE2D7D /* FJMealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0039609316C05E2000FE2D7D /* FJMealsViewController.m */; };
+		0039609816C05E3E00FE2D7D /* FJMealDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0039609716C05E3E00FE2D7D /* FJMealDetailViewController.m */; };
+		003960A116C066C100FE2D7D /* FJMealDetailViewTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 003960A016C066C100FE2D7D /* FJMealDetailViewTextFieldCell.m */; };
+		003960A416C066CE00FE2D7D /* FJMealDetailViewImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 003960A316C066CE00FE2D7D /* FJMealDetailViewImageCell.m */; };
+		003960A816C0885700FE2D7D /* FJGlyphishFood.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 003960A616C0885700FE2D7D /* FJGlyphishFood.pdf */; };
+		003960A916C0885700FE2D7D /* FJGlyphishForkKnife.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 003960A716C0885700FE2D7D /* FJGlyphishForkKnife.pdf */; };
+		003960AC16C08A3200FE2D7D /* FJGlyphishPicture.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 003960AA16C08A3200FE2D7D /* FJGlyphishPicture.pdf */; };
+		003960AD16C08A3200FE2D7D /* FJGlyphishSettings.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 003960AB16C08A3200FE2D7D /* FJGlyphishSettings.pdf */; };
+		003A9CDB16C1725A00BDB45D /* NSDate+FJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A9CDA16C1725A00BDB45D /* NSDate+FJAdditions.m */; };
+		003A9CDE16C1832400BDB45D /* WordPressPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A9CDD16C1832400BDB45D /* WordPressPost.m */; };
+		003A9CE116C1832F00BDB45D /* _WordPressPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A9CE016C1832F00BDB45D /* _WordPressPost.m */; };
+		003A9CE816C18A6A00BDB45D /* FJSelfHostedWordPressAccountDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A9CE416C18A6A00BDB45D /* FJSelfHostedWordPressAccountDetailViewController.m */; };
+		003A9CF116C18AFF00BDB45D /* FJAddWordPressAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A9CF016C18AFF00BDB45D /* FJAddWordPressAccountViewController.m */; };
+		003A9CF516C18B0B00BDB45D /* FJWordPressComAccountDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003A9CF416C18B0B00BDB45D /* FJWordPressComAccountDetailViewController.m */; };
+		004933E716BDACA300541315 /* FJWordPressLogoHighlighted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 004933E616BDACA300541315 /* FJWordPressLogoHighlighted.pdf */; };
+		004933F716BDC98100541315 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004933F516BDC98100541315 /* MobileCoreServices.framework */; };
+		004933F816BDC98100541315 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004933F616BDC98100541315 /* SystemConfiguration.framework */; };
+		0049343216BDE20800541315 /* FJWordPressAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0049343116BDE20800541315 /* FJWordPressAPIClient.m */; };
+		0049345216BE04CE00541315 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0049345116BE04CE00541315 /* Security.framework */; };
+		0049348516BE063600541315 /* AFAuthenticationAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0049346616BE063600541315 /* AFAuthenticationAlertView.m */; };
+		0049349516BE09AC00541315 /* UIAlertView+A2ErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0049349416BE09AC00541315 /* UIAlertView+A2ErrorHandler.m */; };
+		0061EC7D16BDA8FF0080775E /* FJWordPressLogo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0061EC7C16BDA8FF0080775E /* FJWordPressLogo.pdf */; };
+		0061EC8116BDA9A10080775E /* FJAddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061EC8016BDA9A10080775E /* FJAddAccountViewController.m */; };
+		009883D616C0AF9D00163533 /* FJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 009883D516C0AF9D00163533 /* FJTableViewCell.m */; };
+		00AD4FFB16BF909A006623E9 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AD4FF816BF909A006623E9 /* Post.m */; };
+		00AD500116BF90A2006623E9 /* _Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AD4FFE16BF90A2006623E9 /* _Post.m */; };
+		00B7D29516C048E0007B2730 /* _Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7D29216C048E0007B2730 /* _Image.m */; };
+		00B7D29616C048E0007B2730 /* _Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7D29416C048E0007B2730 /* _Meal.m */; };
+		00B7D29B16C048EA007B2730 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7D29816C048EA007B2730 /* Image.m */; };
+		00B7D29C16C048EA007B2730 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7D29A16C048EA007B2730 /* Meal.m */; };
+		00B7D29F16C049B0007B2730 /* _Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7D29E16C049B0007B2730 /* _Food.m */; };
+		00B7D2A216C049B4007B2730 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7D2A116C049B4007B2730 /* Food.m */; };
+		00CB0E3F16C2C788002D1825 /* WordPressImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CB0E3E16C2C788002D1825 /* WordPressImage.m */; };
+		00CB0E4216C2C78E002D1825 /* _WordPressImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CB0E4116C2C78E002D1825 /* _WordPressImage.m */; };
+		00FF359D16BE2627002F4EBC /* FJWordPressLogoNoText.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 00FF359B16BE2627002F4EBC /* FJWordPressLogoNoText.pdf */; };
+		00FF359E16BE2627002F4EBC /* FJWordPressLogoNoTextHighlighted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 00FF359C16BE2627002F4EBC /* FJWordPressLogoNoTextHighlighted.pdf */; };
+		91E6C0FF488A454990751C1A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBADAD3B4C88412690690F2D /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0001A4CE16BF2AF4003093C2 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		0001A4CF16BF2AF4003093C2 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		0001A4D216BF2AF4003093C2 /* WordPressAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordPressAccount.h; sourceTree = "<group>"; };
+		0001A4D316BF2AF4003093C2 /* WordPressAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordPressAccount.m; sourceTree = "<group>"; };
+		0001A4D516BF2AF4003093C2 /* _Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Account.h; sourceTree = "<group>"; };
+		0001A4D616BF2AF4003093C2 /* _Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Account.m; sourceTree = "<group>"; };
+		0001A4D916BF2AF4003093C2 /* _WordPressAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _WordPressAccount.h; sourceTree = "<group>"; };
+		0001A4DA16BF2AF4003093C2 /* _WordPressAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _WordPressAccount.m; sourceTree = "<group>"; };
+		0001A4E216BF47CA003093C2 /* FJPostsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJPostsViewController.h; sourceTree = "<group>"; };
+		0001A4E316BF47CA003093C2 /* FJPostsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJPostsViewController.m; sourceTree = "<group>"; };
+		000E6F9216C5C4CB00CD8803 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		000E6F9316C5C4CB00CD8803 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		000E6F9416C5C4CB00CD8803 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		000E6F9616C5C4CB00CD8803 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		000E6F9716C5C4CB00CD8803 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		000E6F9816C5C4CB00CD8803 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		003864A216BD9FA300BA84C5 /* Food Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		003864A516BD9FA300BA84C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		003864A716BD9FA300BA84C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		003864A916BD9FA300BA84C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		003864AB16BD9FA300BA84C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		003864AF16BD9FA300BA84C5 /* Food Journal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Food Journal-Info.plist"; sourceTree = "<group>"; };
+		003864B116BD9FA300BA84C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		003864B316BD9FA300BA84C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		003864B516BD9FA300BA84C5 /* Food Journal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Food Journal-Prefix.pch"; sourceTree = "<group>"; };
+		003864C016BD9FA300BA84C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		003864C616BD9FA300BA84C5 /* Food_Journal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Food_Journal.xcdatamodel; sourceTree = "<group>"; };
+		003864D616BD9FD300BA84C5 /* FJAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJAppDelegate.h; sourceTree = "<group>"; };
+		003864D716BD9FD300BA84C5 /* FJAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJAppDelegate.m; sourceTree = "<group>"; };
+		003864DC16BD9FD300BA84C5 /* FJSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSettingsViewController.h; sourceTree = "<group>"; };
+		003864DD16BD9FD300BA84C5 /* FJSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FJSettingsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		003864E316BD9FEA00BA84C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		003864E416BD9FEA00BA84C5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		003864E516BD9FEA00BA84C5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		003864EB16BDA0B400BA84C5 /* UIDevice+A2Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+A2Additions.h"; sourceTree = "<group>"; };
+		003864EC16BDA0B400BA84C5 /* UIDevice+A2Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+A2Additions.m"; sourceTree = "<group>"; };
+		003864F016BDA12700BA84C5 /* A2Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2Common.h; sourceTree = "<group>"; };
+		003864F216BDA12700BA84C5 /* FJDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJDefinitions.h; sourceTree = "<group>"; };
+		003864F316BDA12700BA84C5 /* FJDefinitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJDefinitions.m; sourceTree = "<group>"; };
+		003864F416BDA12700BA84C5 /* FJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJAdditions.h; sourceTree = "<group>"; };
+		0039609216C05E2000FE2D7D /* FJMealsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJMealsViewController.h; sourceTree = "<group>"; };
+		0039609316C05E2000FE2D7D /* FJMealsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJMealsViewController.m; sourceTree = "<group>"; };
+		0039609616C05E3E00FE2D7D /* FJMealDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJMealDetailViewController.h; sourceTree = "<group>"; };
+		0039609716C05E3E00FE2D7D /* FJMealDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJMealDetailViewController.m; sourceTree = "<group>"; };
+		0039609F16C066C100FE2D7D /* FJMealDetailViewTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJMealDetailViewTextFieldCell.h; sourceTree = "<group>"; };
+		003960A016C066C100FE2D7D /* FJMealDetailViewTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJMealDetailViewTextFieldCell.m; sourceTree = "<group>"; };
+		003960A216C066CE00FE2D7D /* FJMealDetailViewImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJMealDetailViewImageCell.h; sourceTree = "<group>"; };
+		003960A316C066CE00FE2D7D /* FJMealDetailViewImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJMealDetailViewImageCell.m; sourceTree = "<group>"; };
+		003960A616C0885700FE2D7D /* FJGlyphishFood.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FJGlyphishFood.pdf; sourceTree = "<group>"; };
+		003960A716C0885700FE2D7D /* FJGlyphishForkKnife.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FJGlyphishForkKnife.pdf; sourceTree = "<group>"; };
+		003960AA16C08A3200FE2D7D /* FJGlyphishPicture.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FJGlyphishPicture.pdf; sourceTree = "<group>"; };
+		003960AB16C08A3200FE2D7D /* FJGlyphishSettings.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FJGlyphishSettings.pdf; sourceTree = "<group>"; };
+		003A9CD916C1725A00BDB45D /* NSDate+FJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FJAdditions.h"; sourceTree = "<group>"; };
+		003A9CDA16C1725A00BDB45D /* NSDate+FJAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FJAdditions.m"; sourceTree = "<group>"; };
+		003A9CDC16C1832400BDB45D /* WordPressPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordPressPost.h; sourceTree = "<group>"; };
+		003A9CDD16C1832400BDB45D /* WordPressPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordPressPost.m; sourceTree = "<group>"; };
+		003A9CDF16C1832F00BDB45D /* _WordPressPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _WordPressPost.h; sourceTree = "<group>"; };
+		003A9CE016C1832F00BDB45D /* _WordPressPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _WordPressPost.m; sourceTree = "<group>"; };
+		003A9CE316C18A6A00BDB45D /* FJSelfHostedWordPressAccountDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSelfHostedWordPressAccountDetailViewController.h; sourceTree = "<group>"; };
+		003A9CE416C18A6A00BDB45D /* FJSelfHostedWordPressAccountDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSelfHostedWordPressAccountDetailViewController.m; sourceTree = "<group>"; };
+		003A9CEF16C18AFF00BDB45D /* FJAddWordPressAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJAddWordPressAccountViewController.h; sourceTree = "<group>"; };
+		003A9CF016C18AFF00BDB45D /* FJAddWordPressAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJAddWordPressAccountViewController.m; sourceTree = "<group>"; };
+		003A9CF316C18B0B00BDB45D /* FJWordPressComAccountDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJWordPressComAccountDetailViewController.h; sourceTree = "<group>"; };
+		003A9CF416C18B0B00BDB45D /* FJWordPressComAccountDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJWordPressComAccountDetailViewController.m; sourceTree = "<group>"; };
+		004933E616BDACA300541315 /* FJWordPressLogoHighlighted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FJWordPressLogoHighlighted.pdf; sourceTree = "<group>"; };
+		004933F516BDC98100541315 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		004933F616BDC98100541315 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0049343016BDE20800541315 /* FJWordPressAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJWordPressAPIClient.h; sourceTree = "<group>"; };
+		0049343116BDE20800541315 /* FJWordPressAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJWordPressAPIClient.m; sourceTree = "<group>"; };
+		0049345116BE04CE00541315 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0049346516BE063600541315 /* AFAuthenticationAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAuthenticationAlertView.h; sourceTree = "<group>"; };
+		0049346616BE063600541315 /* AFAuthenticationAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAuthenticationAlertView.m; sourceTree = "<group>"; };
+		0049349316BE09AC00541315 /* UIAlertView+A2ErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+A2ErrorHandler.h"; sourceTree = "<group>"; };
+		0049349416BE09AC00541315 /* UIAlertView+A2ErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+A2ErrorHandler.m"; sourceTree = "<group>"; };
+		0061EC7C16BDA8FF0080775E /* FJWordPressLogo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FJWordPressLogo.pdf; sourceTree = "<group>"; };
+		0061EC7F16BDA9A10080775E /* FJAddAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJAddAccountViewController.h; sourceTree = "<group>"; };
+		0061EC8016BDA9A10080775E /* FJAddAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJAddAccountViewController.m; sourceTree = "<group>"; };
+		009883D416C0AF9D00163533 /* FJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTableViewCell.h; sourceTree = "<group>"; };
+		009883D516C0AF9D00163533 /* FJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTableViewCell.m; sourceTree = "<group>"; };
+		00A463CA16C4948800CAE886 /* Food_Journal 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Food_Journal 2.xcdatamodel"; sourceTree = "<group>"; };
+		00AD4FF716BF909A006623E9 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		00AD4FF816BF909A006623E9 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		00AD4FFD16BF90A2006623E9 /* _Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Post.h; sourceTree = "<group>"; };
+		00AD4FFE16BF90A2006623E9 /* _Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Post.m; sourceTree = "<group>"; };
+		00B7D29116C048E0007B2730 /* _Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Image.h; sourceTree = "<group>"; };
+		00B7D29216C048E0007B2730 /* _Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Image.m; sourceTree = "<group>"; };
+		00B7D29316C048E0007B2730 /* _Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Meal.h; sourceTree = "<group>"; };
+		00B7D29416C048E0007B2730 /* _Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Meal.m; sourceTree = "<group>"; };
+		00B7D29716C048EA007B2730 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		00B7D29816C048EA007B2730 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		00B7D29916C048EA007B2730 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		00B7D29A16C048EA007B2730 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		00B7D29D16C049B0007B2730 /* _Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Food.h; sourceTree = "<group>"; };
+		00B7D29E16C049B0007B2730 /* _Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Food.m; sourceTree = "<group>"; };
+		00B7D2A016C049B4007B2730 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		00B7D2A116C049B4007B2730 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		00CB0E3D16C2C788002D1825 /* WordPressImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordPressImage.h; sourceTree = "<group>"; };
+		00CB0E3E16C2C788002D1825 /* WordPressImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordPressImage.m; sourceTree = "<group>"; };
+		00CB0E4016C2C78E002D1825 /* _WordPressImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _WordPressImage.h; sourceTree = "<group>"; };
+		00CB0E4116C2C78E002D1825 /* _WordPressImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _WordPressImage.m; sourceTree = "<group>"; };
+		00F197C316C59A2500C9D748 /* Food_Journal 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Food_Journal 3.xcdatamodel"; sourceTree = "<group>"; };
+		00FF359B16BE2627002F4EBC /* FJWordPressLogoNoText.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FJWordPressLogoNoText.pdf; sourceTree = "<group>"; };
+		00FF359C16BE2627002F4EBC /* FJWordPressLogoNoTextHighlighted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FJWordPressLogoNoTextHighlighted.pdf; sourceTree = "<group>"; };
+		5C1D5D4DA4234B9FBFA80D51 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CBADAD3B4C88412690690F2D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0038649F16BD9FA300BA84C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003864AA16BD9FA300BA84C5 /* CoreGraphics.framework in Frameworks */,
+				003864AC16BD9FA300BA84C5 /* CoreData.framework in Frameworks */,
+				003864A816BD9FA300BA84C5 /* Foundation.framework in Frameworks */,
+				004933F716BDC98100541315 /* MobileCoreServices.framework in Frameworks */,
+				0049345216BE04CE00541315 /* Security.framework in Frameworks */,
+				004933F816BDC98100541315 /* SystemConfiguration.framework in Frameworks */,
+				003864A616BD9FA300BA84C5 /* UIKit.framework in Frameworks */,
+				91E6C0FF488A454990751C1A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0001A4CC16BF2AF4003093C2 /* Entity Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0001A4CD16BF2AF4003093C2 /* Human */,
+				0001A4D416BF2AF4003093C2 /* Machine */,
+			);
+			path = "Entity Classes";
+			sourceTree = "<group>";
+		};
+		0001A4CD16BF2AF4003093C2 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				0001A4CE16BF2AF4003093C2 /* Account.h */,
+				0001A4CF16BF2AF4003093C2 /* Account.m */,
+				00B7D2A016C049B4007B2730 /* Food.h */,
+				00B7D2A116C049B4007B2730 /* Food.m */,
+				00B7D29716C048EA007B2730 /* Image.h */,
+				00B7D29816C048EA007B2730 /* Image.m */,
+				00B7D29916C048EA007B2730 /* Meal.h */,
+				00B7D29A16C048EA007B2730 /* Meal.m */,
+				00AD4FF716BF909A006623E9 /* Post.h */,
+				00AD4FF816BF909A006623E9 /* Post.m */,
+				0001A4D216BF2AF4003093C2 /* WordPressAccount.h */,
+				0001A4D316BF2AF4003093C2 /* WordPressAccount.m */,
+				00CB0E3D16C2C788002D1825 /* WordPressImage.h */,
+				00CB0E3E16C2C788002D1825 /* WordPressImage.m */,
+				003A9CDC16C1832400BDB45D /* WordPressPost.h */,
+				003A9CDD16C1832400BDB45D /* WordPressPost.m */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		0001A4D416BF2AF4003093C2 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				0001A4D516BF2AF4003093C2 /* _Account.h */,
+				0001A4D616BF2AF4003093C2 /* _Account.m */,
+				00B7D29D16C049B0007B2730 /* _Food.h */,
+				00B7D29E16C049B0007B2730 /* _Food.m */,
+				00B7D29116C048E0007B2730 /* _Image.h */,
+				00B7D29216C048E0007B2730 /* _Image.m */,
+				00B7D29316C048E0007B2730 /* _Meal.h */,
+				00B7D29416C048E0007B2730 /* _Meal.m */,
+				00AD4FFD16BF90A2006623E9 /* _Post.h */,
+				00AD4FFE16BF90A2006623E9 /* _Post.m */,
+				0001A4D916BF2AF4003093C2 /* _WordPressAccount.h */,
+				0001A4DA16BF2AF4003093C2 /* _WordPressAccount.m */,
+				00CB0E4016C2C78E002D1825 /* _WordPressImage.h */,
+				00CB0E4116C2C78E002D1825 /* _WordPressImage.m */,
+				003A9CDF16C1832F00BDB45D /* _WordPressPost.h */,
+				003A9CE016C1832F00BDB45D /* _WordPressPost.m */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
+		0001A4E116BF47C2003093C2 /* Posts View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0001A4E216BF47CA003093C2 /* FJPostsViewController.h */,
+				0001A4E316BF47CA003093C2 /* FJPostsViewController.m */,
+			);
+			path = "Posts View Controller";
+			sourceTree = "<group>";
+		};
+		000E6F9116C5C4CB00CD8803 /* Application Icon */ = {
+			isa = PBXGroup;
+			children = (
+				000E6F9216C5C4CB00CD8803 /* Icon-Small.png */,
+				000E6F9316C5C4CB00CD8803 /* Icon-Small@2x.png */,
+				000E6F9416C5C4CB00CD8803 /* Icon.png */,
+				000E6F9616C5C4CB00CD8803 /* Icon@2x.png */,
+				000E6F9716C5C4CB00CD8803 /* iTunesArtwork */,
+				000E6F9816C5C4CB00CD8803 /* iTunesArtwork@2x */,
+			);
+			path = "Application Icon";
+			sourceTree = "<group>";
+		};
+		0038649916BD9FA300BA84C5 = {
+			isa = PBXGroup;
+			children = (
+				003864AD16BD9FA300BA84C5 /* Food Journal */,
+				003864A416BD9FA300BA84C5 /* Frameworks */,
+				003864A316BD9FA300BA84C5 /* Products */,
+				5C1D5D4DA4234B9FBFA80D51 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		003864A316BD9FA300BA84C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				003864A216BD9FA300BA84C5 /* Food Journal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		003864A416BD9FA300BA84C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				003864AB16BD9FA300BA84C5 /* CoreData.framework */,
+				003864A916BD9FA300BA84C5 /* CoreGraphics.framework */,
+				003864A716BD9FA300BA84C5 /* Foundation.framework */,
+				004933F516BDC98100541315 /* MobileCoreServices.framework */,
+				0049345116BE04CE00541315 /* Security.framework */,
+				004933F616BDC98100541315 /* SystemConfiguration.framework */,
+				003864A516BD9FA300BA84C5 /* UIKit.framework */,
+				CBADAD3B4C88412690690F2D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		003864AD16BD9FA300BA84C5 /* Food Journal */ = {
+			isa = PBXGroup;
+			children = (
+				003864EA16BDA0B400BA84C5 /* Categories */,
+				003864D416BD9FD300BA84C5 /* Classes */,
+				003864E116BD9FEA00BA84C5 /* Images */,
+				003864AE16BD9FA300BA84C5 /* Supporting Files */,
+				0049345616BE063500541315 /* Vendor */,
+			);
+			path = "Food Journal";
+			sourceTree = "<group>";
+		};
+		003864AE16BD9FA300BA84C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				003864AF16BD9FA300BA84C5 /* Food Journal-Info.plist */,
+				003864B516BD9FA300BA84C5 /* Food Journal-Prefix.pch */,
+				003864C516BD9FA300BA84C5 /* Food_Journal.xcdatamodeld */,
+				003864B016BD9FA300BA84C5 /* InfoPlist.strings */,
+				003864B316BD9FA300BA84C5 /* main.m */,
+				003864BF16BD9FA300BA84C5 /* MainStoryboard.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		003864D416BD9FD300BA84C5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0061EC7E16BDA98A0080775E /* Add Account View Controller */,
+				003A9CEE16C18AFF00BDB45D /* Add WordPress Account View Controller */,
+				003864EF16BDA12700BA84C5 /* Additions */,
+				003864D516BD9FD300BA84C5 /* App Delegate */,
+				0001A4CC16BF2AF4003093C2 /* Entity Classes */,
+				0039609416C05E2000FE2D7D /* Meal Detail View Controller */,
+				0039609116C05E2000FE2D7D /* Meals View Controller */,
+				0001A4E116BF47C2003093C2 /* Posts View Controller */,
+				003A9CE216C18A6A00BDB45D /* Self-Hosted WordPress Account Detail View Controller */,
+				003864DB16BD9FD300BA84C5 /* Settings View Controller */,
+				0039609C16C066B400FE2D7D /* Table View Cells */,
+				0049342F16BDE1FD00541315 /* Word Press API Client */,
+				003A9CF216C18B0B00BDB45D /* WordPress.com Account Detail View Controller */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		003864D516BD9FD300BA84C5 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				003864D616BD9FD300BA84C5 /* FJAppDelegate.h */,
+				003864D716BD9FD300BA84C5 /* FJAppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		003864DB16BD9FD300BA84C5 /* Settings View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				003864DC16BD9FD300BA84C5 /* FJSettingsViewController.h */,
+				003864DD16BD9FD300BA84C5 /* FJSettingsViewController.m */,
+			);
+			path = "Settings View Controller";
+			sourceTree = "<group>";
+		};
+		003864E116BD9FEA00BA84C5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				000E6F9116C5C4CB00CD8803 /* Application Icon */,
+				003864E216BD9FEA00BA84C5 /* Application Launch Images */,
+				003960A516C0885700FE2D7D /* Glyphish PDFs */,
+				0061EC7916BDA8B80080775E /* Services */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		003864E216BD9FEA00BA84C5 /* Application Launch Images */ = {
+			isa = PBXGroup;
+			children = (
+				003864E316BD9FEA00BA84C5 /* Default-568h@2x.png */,
+				003864E416BD9FEA00BA84C5 /* Default.png */,
+				003864E516BD9FEA00BA84C5 /* Default@2x.png */,
+			);
+			path = "Application Launch Images";
+			sourceTree = "<group>";
+		};
+		003864EA16BDA0B400BA84C5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				003A9CD916C1725A00BDB45D /* NSDate+FJAdditions.h */,
+				003A9CDA16C1725A00BDB45D /* NSDate+FJAdditions.m */,
+				0049349316BE09AC00541315 /* UIAlertView+A2ErrorHandler.h */,
+				0049349416BE09AC00541315 /* UIAlertView+A2ErrorHandler.m */,
+				003864EB16BDA0B400BA84C5 /* UIDevice+A2Additions.h */,
+				003864EC16BDA0B400BA84C5 /* UIDevice+A2Additions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		003864EF16BDA12700BA84C5 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				003864F016BDA12700BA84C5 /* A2Common.h */,
+				003864F116BDA12700BA84C5 /* Definitions */,
+				003864F416BDA12700BA84C5 /* FJAdditions.h */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		003864F116BDA12700BA84C5 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				003864F216BDA12700BA84C5 /* FJDefinitions.h */,
+				003864F316BDA12700BA84C5 /* FJDefinitions.m */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		0039609116C05E2000FE2D7D /* Meals View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0039609216C05E2000FE2D7D /* FJMealsViewController.h */,
+				0039609316C05E2000FE2D7D /* FJMealsViewController.m */,
+			);
+			path = "Meals View Controller";
+			sourceTree = "<group>";
+		};
+		0039609416C05E2000FE2D7D /* Meal Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0039609616C05E3E00FE2D7D /* FJMealDetailViewController.h */,
+				0039609716C05E3E00FE2D7D /* FJMealDetailViewController.m */,
+			);
+			path = "Meal Detail View Controller";
+			sourceTree = "<group>";
+		};
+		0039609C16C066B400FE2D7D /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0039609D16C066B400FE2D7D /* Meal Detail View Food Cell */,
+				0039609E16C066B400FE2D7D /* Meal Detail View Image Cell */,
+				009883D316C0AF9600163533 /* Table View Cell */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		0039609D16C066B400FE2D7D /* Meal Detail View Food Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0039609F16C066C100FE2D7D /* FJMealDetailViewTextFieldCell.h */,
+				003960A016C066C100FE2D7D /* FJMealDetailViewTextFieldCell.m */,
+			);
+			name = "Meal Detail View Food Cell";
+			path = "Meal Detail View Text Field Cell";
+			sourceTree = "<group>";
+		};
+		0039609E16C066B400FE2D7D /* Meal Detail View Image Cell */ = {
+			isa = PBXGroup;
+			children = (
+				003960A216C066CE00FE2D7D /* FJMealDetailViewImageCell.h */,
+				003960A316C066CE00FE2D7D /* FJMealDetailViewImageCell.m */,
+			);
+			path = "Meal Detail View Image Cell";
+			sourceTree = "<group>";
+		};
+		003960A516C0885700FE2D7D /* Glyphish PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				003960A616C0885700FE2D7D /* FJGlyphishFood.pdf */,
+				003960A716C0885700FE2D7D /* FJGlyphishForkKnife.pdf */,
+				003960AA16C08A3200FE2D7D /* FJGlyphishPicture.pdf */,
+				003960AB16C08A3200FE2D7D /* FJGlyphishSettings.pdf */,
+			);
+			path = "Glyphish PDFs";
+			sourceTree = "<group>";
+		};
+		003A9CE216C18A6A00BDB45D /* Self-Hosted WordPress Account Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				003A9CE316C18A6A00BDB45D /* FJSelfHostedWordPressAccountDetailViewController.h */,
+				003A9CE416C18A6A00BDB45D /* FJSelfHostedWordPressAccountDetailViewController.m */,
+			);
+			path = "Self-Hosted WordPress Account Detail View Controller";
+			sourceTree = "<group>";
+		};
+		003A9CEE16C18AFF00BDB45D /* Add WordPress Account View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				003A9CEF16C18AFF00BDB45D /* FJAddWordPressAccountViewController.h */,
+				003A9CF016C18AFF00BDB45D /* FJAddWordPressAccountViewController.m */,
+			);
+			path = "Add WordPress Account View Controller";
+			sourceTree = "<group>";
+		};
+		003A9CF216C18B0B00BDB45D /* WordPress.com Account Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				003A9CF316C18B0B00BDB45D /* FJWordPressComAccountDetailViewController.h */,
+				003A9CF416C18B0B00BDB45D /* FJWordPressComAccountDetailViewController.m */,
+			);
+			path = "WordPress.com Account Detail View Controller";
+			sourceTree = "<group>";
+		};
+		0049342F16BDE1FD00541315 /* Word Press API Client */ = {
+			isa = PBXGroup;
+			children = (
+				0049343016BDE20800541315 /* FJWordPressAPIClient.h */,
+				0049343116BDE20800541315 /* FJWordPressAPIClient.m */,
+			);
+			path = "Word Press API Client";
+			sourceTree = "<group>";
+		};
+		0049345616BE063500541315 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				0049346316BE063600541315 /* WordPress */,
+			);
+			path = Vendor;
+			sourceTree = SOURCE_ROOT;
+		};
+		0049346316BE063600541315 /* WordPress */ = {
+			isa = PBXGroup;
+			children = (
+				0049346416BE063600541315 /* AFAuthenticationAlertView */,
+			);
+			path = WordPress;
+			sourceTree = "<group>";
+		};
+		0049346416BE063600541315 /* AFAuthenticationAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				0049346516BE063600541315 /* AFAuthenticationAlertView.h */,
+				0049346616BE063600541315 /* AFAuthenticationAlertView.m */,
+			);
+			path = AFAuthenticationAlertView;
+			sourceTree = "<group>";
+		};
+		0061EC7916BDA8B80080775E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0061EC7C16BDA8FF0080775E /* FJWordPressLogo.pdf */,
+				004933E616BDACA300541315 /* FJWordPressLogoHighlighted.pdf */,
+				00FF359B16BE2627002F4EBC /* FJWordPressLogoNoText.pdf */,
+				00FF359C16BE2627002F4EBC /* FJWordPressLogoNoTextHighlighted.pdf */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0061EC7E16BDA98A0080775E /* Add Account View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0061EC7F16BDA9A10080775E /* FJAddAccountViewController.h */,
+				0061EC8016BDA9A10080775E /* FJAddAccountViewController.m */,
+			);
+			path = "Add Account View Controller";
+			sourceTree = "<group>";
+		};
+		009883D316C0AF9600163533 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				009883D416C0AF9D00163533 /* FJTableViewCell.h */,
+				009883D516C0AF9D00163533 /* FJTableViewCell.m */,
+			);
+			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		003864A116BD9FA300BA84C5 /* Food Journal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 003864D016BD9FA300BA84C5 /* Build configuration list for PBXNativeTarget "Food Journal" */;
+			buildPhases = (
+				0001A4CB16BF2A68003093C2 /* Run Mogenerator */,
+				0038649E16BD9FA300BA84C5 /* Sources */,
+				0038649F16BD9FA300BA84C5 /* Frameworks */,
+				003864A016BD9FA300BA84C5 /* Resources */,
+				9D93F25E8E3B425CAD937501 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Food Journal";
+			productName = "Food Journal";
+			productReference = 003864A216BD9FA300BA84C5 /* Food Journal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0038649A16BD9FA300BA84C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FJ;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Pandamonia LLC";
+			};
+			buildConfigurationList = 0038649D16BD9FA300BA84C5 /* Build configuration list for PBXProject "Food Journal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0038649916BD9FA300BA84C5;
+			productRefGroup = 003864A316BD9FA300BA84C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				003864A116BD9FA300BA84C5 /* Food Journal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		003864A016BD9FA300BA84C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003864B216BD9FA300BA84C5 /* InfoPlist.strings in Resources */,
+				003864C116BD9FA300BA84C5 /* MainStoryboard.storyboard in Resources */,
+				003864E616BD9FEA00BA84C5 /* Default-568h@2x.png in Resources */,
+				003864E716BD9FEA00BA84C5 /* Default.png in Resources */,
+				003864E816BD9FEA00BA84C5 /* Default@2x.png in Resources */,
+				0061EC7D16BDA8FF0080775E /* FJWordPressLogo.pdf in Resources */,
+				004933E716BDACA300541315 /* FJWordPressLogoHighlighted.pdf in Resources */,
+				00FF359D16BE2627002F4EBC /* FJWordPressLogoNoText.pdf in Resources */,
+				00FF359E16BE2627002F4EBC /* FJWordPressLogoNoTextHighlighted.pdf in Resources */,
+				003960A816C0885700FE2D7D /* FJGlyphishFood.pdf in Resources */,
+				003960A916C0885700FE2D7D /* FJGlyphishForkKnife.pdf in Resources */,
+				003960AC16C08A3200FE2D7D /* FJGlyphishPicture.pdf in Resources */,
+				003960AD16C08A3200FE2D7D /* FJGlyphishSettings.pdf in Resources */,
+				000E6F9916C5C4CB00CD8803 /* Icon-Small.png in Resources */,
+				000E6F9A16C5C4CB00CD8803 /* Icon-Small@2x.png in Resources */,
+				000E6F9B16C5C4CB00CD8803 /* Icon.png in Resources */,
+				000E6F9D16C5C4CB00CD8803 /* Icon@2x.png in Resources */,
+				000E6F9E16C5C4CB00CD8803 /* iTunesArtwork in Resources */,
+				000E6F9F16C5C4CB00CD8803 /* iTunesArtwork@2x in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0001A4CB16BF2A68003093C2 /* Run Mogenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Mogenerator";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"Food Journal/\"\n/usr/local/bin/mogenerator --template-var arc=true -m \"Food_Journal.xcdatamodeld/Food_Journal 2.xcdatamodel/\" -M \"Classes/Entity Classes/Machine/\" -H \"Classes/Entity Classes/Human/\"";
+		};
+		9D93F25E8E3B425CAD937501 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0038649E16BD9FA300BA84C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003864B416BD9FA300BA84C5 /* main.m in Sources */,
+				003864C716BD9FA300BA84C5 /* Food_Journal.xcdatamodeld in Sources */,
+				003864DE16BD9FD300BA84C5 /* FJAppDelegate.m in Sources */,
+				003864E016BD9FD300BA84C5 /* FJSettingsViewController.m in Sources */,
+				003864ED16BDA0B400BA84C5 /* UIDevice+A2Additions.m in Sources */,
+				003864F516BDA12700BA84C5 /* FJDefinitions.m in Sources */,
+				0061EC8116BDA9A10080775E /* FJAddAccountViewController.m in Sources */,
+				0049343216BDE20800541315 /* FJWordPressAPIClient.m in Sources */,
+				0049348516BE063600541315 /* AFAuthenticationAlertView.m in Sources */,
+				0049349516BE09AC00541315 /* UIAlertView+A2ErrorHandler.m in Sources */,
+				0001A4DB16BF2AF4003093C2 /* Account.m in Sources */,
+				0001A4DD16BF2AF4003093C2 /* WordPressAccount.m in Sources */,
+				0001A4DE16BF2AF4003093C2 /* _Account.m in Sources */,
+				0001A4E016BF2AF4003093C2 /* _WordPressAccount.m in Sources */,
+				0001A4E416BF47CA003093C2 /* FJPostsViewController.m in Sources */,
+				00AD4FFB16BF909A006623E9 /* Post.m in Sources */,
+				00AD500116BF90A2006623E9 /* _Post.m in Sources */,
+				00B7D29516C048E0007B2730 /* _Image.m in Sources */,
+				00B7D29616C048E0007B2730 /* _Meal.m in Sources */,
+				00B7D29B16C048EA007B2730 /* Image.m in Sources */,
+				00B7D29C16C048EA007B2730 /* Meal.m in Sources */,
+				00B7D29F16C049B0007B2730 /* _Food.m in Sources */,
+				00B7D2A216C049B4007B2730 /* Food.m in Sources */,
+				0039609516C05E2000FE2D7D /* FJMealsViewController.m in Sources */,
+				0039609816C05E3E00FE2D7D /* FJMealDetailViewController.m in Sources */,
+				003960A116C066C100FE2D7D /* FJMealDetailViewTextFieldCell.m in Sources */,
+				003960A416C066CE00FE2D7D /* FJMealDetailViewImageCell.m in Sources */,
+				009883D616C0AF9D00163533 /* FJTableViewCell.m in Sources */,
+				003A9CDB16C1725A00BDB45D /* NSDate+FJAdditions.m in Sources */,
+				003A9CDE16C1832400BDB45D /* WordPressPost.m in Sources */,
+				003A9CE116C1832F00BDB45D /* _WordPressPost.m in Sources */,
+				003A9CE816C18A6A00BDB45D /* FJSelfHostedWordPressAccountDetailViewController.m in Sources */,
+				003A9CF116C18AFF00BDB45D /* FJAddWordPressAccountViewController.m in Sources */,
+				003A9CF516C18B0B00BDB45D /* FJWordPressComAccountDetailViewController.m in Sources */,
+				00CB0E3F16C2C788002D1825 /* WordPressImage.m in Sources */,
+				00CB0E4216C2C78E002D1825 /* _WordPressImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		003864B016BD9FA300BA84C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				003864B116BD9FA300BA84C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		003864BF16BD9FA300BA84C5 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				003864C016BD9FA300BA84C5 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		003864CE16BD9FA300BA84C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		003864CF16BD9FA300BA84C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		003864D116BD9FA300BA84C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1D5D4DA4234B9FBFA80D51 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Food Journal/Food Journal-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
+				INFOPLIST_FILE = "Food Journal/Food Journal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		003864D216BD9FA300BA84C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1D5D4DA4234B9FBFA80D51 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Food Journal/Food Journal-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
+				INFOPLIST_FILE = "Food Journal/Food Journal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0038649D16BD9FA300BA84C5 /* Build configuration list for PBXProject "Food Journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				003864CE16BD9FA300BA84C5 /* Debug */,
+				003864CF16BD9FA300BA84C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		003864D016BD9FA300BA84C5 /* Build configuration list for PBXNativeTarget "Food Journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				003864D116BD9FA300BA84C5 /* Debug */,
+				003864D216BD9FA300BA84C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		003864C516BD9FA300BA84C5 /* Food_Journal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00F197C316C59A2500C9D748 /* Food_Journal 3.xcdatamodel */,
+				00A463CA16C4948800CAE886 /* Food_Journal 2.xcdatamodel */,
+				003864C616BD9FA300BA84C5 /* Food_Journal.xcdatamodel */,
+			);
+			currentVersion = 00F197C316C59A2500C9D748 /* Food_Journal 3.xcdatamodel */;
+			path = Food_Journal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0038649A16BD9FA300BA84C5 /* Project object */;
+}
